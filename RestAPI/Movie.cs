@@ -42,9 +42,4 @@ namespace RestAPI
         }
 
     }
-
-    public class Movielist
-    {
-        public Movie[] Movies { get; set; }
-    }
 }

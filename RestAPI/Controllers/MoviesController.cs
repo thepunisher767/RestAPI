@@ -11,14 +11,14 @@ namespace RestAPI.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
-        [HttpGet("List")]
+        [HttpGet("ListAll")]
         public List<Movie> List()
         {
             List<Movie> movielist = Movie.GetMovies();
             return movielist;
         }
 
-        [HttpGet("List/{category}")]
+        [HttpGet("ListCategory")]
         public List<Movie> ListCategory(string category)
         {
             List<Movie> movielist = Movie.GetMoviesCat(category);
